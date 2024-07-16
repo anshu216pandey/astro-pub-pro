@@ -13,7 +13,7 @@
             color: #ffffff;
             font-family: 'Georgia', serif;
         }
-        
+
         .navigation {
             background-color: black;
         }
@@ -23,14 +23,9 @@
             font-size: 1.5em;
         }
 
-        .navbar-toggler-icon {
-            background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 215, 0, 0.7%29" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
-        }
-
         .btn-primary {
             background-color: #ffd700;
             border-color: #ffd700;
-            margin-left: 60rem !important;
         }
 
         .carousel-inner img {
@@ -76,11 +71,11 @@
         }
 
         .card-text {
-            color:rgb(10, 1, 1);
+            color: rgb(10, 1, 1);
         }
 
         .footer {
-            background-color: rgba(0, 0, 0, 0.849)!important;
+            background-color: rgba(0, 0, 0, 0.849) !important;
             height: 8rem;
             text-align: center;
             display: flex;
@@ -92,40 +87,36 @@
             color: #ffd700 !important;
         }
 
-        .card-img-top{
+        .card-img-top {
             height: 15rem;
         }
 
-        .card-body{
+        .card-body {
             height: 8rem;
         }
 
-        .photo{
+        .photo {
             width: 100% !important;
             height: 500px !important;
-            object-fit:fill !important;
+            object-fit: fill !important;
         }
-        
+
+        @media (max-width: 767.98px) {
+            .navbar-nav {
+                flex-direction: row;
+            }
+            .navbar-nav .nav-item {
+                margin-left: auto;
+            }
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navigation">
         <div class="container-fluid">
             <img src="/images/logo.jpg" height="50px" class="logo">
-            <div>
-                <a class="navbar-brand" href="#">Palmastro</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-            <div class="collapse navbar-collapse contact" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item ">
-                        <a href="/contact" class="btn btn-primary ">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+            <a class="navbar-brand" href="#">Palmastro</a>
+            <a href="/contact" class="btn btn-primary ml-auto">Contact Us</a>
         </div>
     </nav>
 
@@ -171,14 +162,14 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Footer -->
     <footer class="footer mt-auto py-3 foot">
         <div class="container">
             <marquee behavior="" direction=""><span class="text-muted">It is during our darkest moments that we must focus to see the light</span></marquee>
         </div>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
