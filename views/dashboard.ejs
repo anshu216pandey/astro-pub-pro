@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('https://www.example.com/starry-background.jpg'); /* Replace with a starry background image URL */
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Georgia', serif;
+            color: #ffd700;
+        }
+        .card {
+            background-color: rgba(0, 0, 139, 0.8);
+            border: none;
+            margin-bottom: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 10px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+        }
+        .card-title {
+            color: #ffd700;
+            font-family: 'Georgia', serif;
+        }
+        .card-text {
+            color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Astrology Dashboard</h1>
+        <div class="row">
+            <% users.forEach(function(user) { %>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= user.name %></h5>
+                            <p class="card-text"><%= user.email %></p>
+                            <p class="card-text"><%= user.query %></p>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

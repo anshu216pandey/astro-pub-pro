@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #1e3c72, #2a5298); /* Dark blue gradient background */
+            color: #fff; /* White text */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font style */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* Transparent black background for container */
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkling 1.5s infinite ease-in-out;
+        }
+        @keyframes twinkling {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4">Response Submitted</h1>
+        <p class="lead">Thank you for your query!</p>
+    </div>
+
+    <!-- Adding some stars to the background for the astrology theme -->
+    <div class="star" style="top: 20%; left: 25%; animation-delay: 0s;"></div>
+    <div class="star" style="top: 40%; left: 15%; animation-delay: 0.2s;"></div>
+    <div class="star" style="top: 60%; left: 45%; animation-delay: 0.4s;"></div>
+    <div class="star" style="top: 80%; left: 30%; animation-delay: 0.6s;"></div>
+    <div class="star" style="top: 70%; left: 70%; animation-delay: 0.8s;"></div>
+    <div class="star" style="top: 50%; left: 80%; animation-delay: 1s;"></div>
+    <div class="star" style="top: 30%; left: 60%; animation-delay: 1.2s;"></div>
+    <div class="star" style="top: 10%; left: 40%; animation-delay: 1.4s;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

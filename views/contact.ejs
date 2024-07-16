@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #0d0d0d; /* Very dark background */
+            color: #ffd700; /* Gold text */
+            font-family: 'Georgia', serif; /* Elegant font style */
+        }
+        .contact-header {
+            background: rgb(23, 21, 59);
+            background-size: cover;
+            color: #ffd700; /* Gold text */
+            padding: 70px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .contact-header h1 {
+            font-family: 'Garamond', serif; /* Elegant serif font */
+            font-size: 3.5rem;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .contact-header p {
+            font-style: italic;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .contact-card {
+            margin-top: -50px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+            color: #ffd700; /* Gold text */
+            border: 1px solid #444;
+            border-radius: 15px;
+        }
+        .btn-primary {
+            background-color: #b07b62; /* Gold button */
+            border-color: #b07b62;
+        }
+        .btn-primary:hover {
+            background-color: #91664b; /* Darker gold on hover */
+            border-color: #91664b;
+        }
+        label {
+            color: #ffd700; /* Gold label text */
+        }
+        textarea.form-control, input.form-control {
+            color: #ffd700; /* Gold text */
+            background-color: #3b3b3b; /* Darker input background */
+            border: 1px solid #555; /* Subtle border */
+        }
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            top: 0;
+            left: 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1rem;
+            color: #ffd700;
+            background-color: #0d0d0d;
+            border-top: 1px solid #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-header">
+        <div class="stars"></div>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card contact-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Get in Touch</h2>
+                        <form action="/contact" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="query">Query</label>
+                                <textarea class="form-control" id="query" name="query" rows="3" placeholder="Enter your query"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
